@@ -8,13 +8,9 @@ for (const all of allBtn) {
         count++;
         counts--;
 
-        // document.getElementById('A1').addEventListener('click',function(){
-        //     const commentBox = document.getElementById('new-comment');
-        //     const newComment =commentBox.value;
-        //     const p = document.createElement('p');
-        //     p.innerText = newComment;
+        
 
-        // })
+        
 
         setInnerText("seat-count", count);
         setInnerText("Seats-left", counts);

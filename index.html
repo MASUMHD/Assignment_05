@@ -60,7 +60,7 @@
                         Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .
                     </p>
                     <div class=" ">
-                        <a class="btn bg-[#1DD100]  lg:h-12 w-24 lg:w-32 mt-1 lg:mt-8" style="color: #080808;" >Register Now!</a>
+                        <a class="btn bg-[#1DD100]  lg:h-12 w-24 lg:w-32 mt-1 lg:mt-8" style="color: #080808; " href="#paribahan">Register Now!</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
         </section>
 
         <!-- M.R Paribahan section -->
-        <section class="bg-slate-100 h-full w-full rounded-3xl mt-20 container mx-auto">
+        <section id="paribahan" class=" h-full w-full rounded-3xl mt-20 container mx-auto">
             <div class="text-center pt-20 mb-8">
                 <h1 class="text-3xl font-bold">
                     MR. Paribahan
@@ -382,7 +382,7 @@
                     <label for="" class="text-xl font-bold">Email ID</label> <br>
                     <input id="email-id" class="rounded-lg w-full mt-2 p-3" type="email" placeholder="Enter your email id">
                 
-                    <button id="next-btn" class="btn w-full mt-5 bg-[#1DD100] text-white">Next</button>
+                    <button onclick="myModal.showModal()" id="next-btn" class="btn w-full mt-5 bg-[#1DD100] text-white">Next</button>
                 
                     <div class="flex justify-between ml-8 mr-8 mt-8">
                         <p>
@@ -393,6 +393,27 @@
                         </p>
                     </div>
                 </div>
+
+                <dialog id="myModal" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+                        <div class="flex justify-center my-10">
+                            <img src="./images/success.png" alt="">
+                        </div>
+                        <h3 class="font-bold text-5xl text-center">SUCCESS</h3>
+                        <p class="pt-8 py-3 font-bold text-[15px] text-center text-gray-900">
+                            Thank you for Booking Our Bus Seats. <br> 
+                            We are working hard to find the best service and deals for you.
+                        </p>
+                        <p class="py-4 font-normal text-lg text-center text-[#888888]">
+                            Shortly you will find a confirmation in your email.
+                        </p>
+                        <div class="modal-action flex justify-center">
+
+                            <a class="w-[300px]  mt-2 mb-10 bg-[#27AE60] p-5 rounded-full text-center  text-white font-semibold text-sm"
+                                href="index.html">Continue</a>
+                        </div>
+                    </form>
+                </dialog>
                 
                 
 

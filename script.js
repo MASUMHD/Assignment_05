@@ -61,7 +61,8 @@ document.getElementById("next-btn").addEventListener("click", function () {
     const emailId = document.getElementById("email-id").value;
 
     if (passengerName && phoneNumber && emailId) {
-        alert("Congratulations! Your booking is confirmed.");
+        // alert("Congratulations! Your booking is confirmed.");
+        document.getElementById("myModal").showModal();
     } else {
         alert("Please fill in all the required fields.");
     }

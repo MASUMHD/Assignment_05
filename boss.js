@@ -57,31 +57,22 @@ function addSeat(seatId) {
 // calculate grand total and discount amount...............>>>>>>>>
 
 
-
 function calculateGrandTotal() {
     const couponCode = document.getElementById("input").value;
-
     let discount = 0;
-
     if (couponCode === "NEW15") {
         discount = 15;
-    } else if (couponCode === "Couple 20") {
-        discount = 20;
-    }
+        document.getElementById("coupon-input").classList.add('hidden');
 
+    }
+    else if (couponCode === "Couple 20") {
+        discount = 20;
+        document.getElementById("coupon-input").classList.add('hidden');
+    }
     const discountAmount = (totalPrice * discount) / 100;
     grandTotal = totalPrice - discountAmount;
-
     setInnerText("grand-total", grandTotal);
-
-
 }
-
-document.getElementById("apply-btn").addEventListener("click", function () {
-    calculateGrandTotal();
-    document.getElementById("input").setAttribute("disabled", "true");
-    document.getElementById("apply-btn").style.display = "none";
-});
 
 
 
